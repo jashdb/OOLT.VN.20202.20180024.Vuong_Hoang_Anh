@@ -10,9 +10,12 @@ public class cal2num {
     public void setB(double b){
         this.b=b;
     }
-
+    String division(double a, double b){
+        if(b==0) return " indeterminate";
+        else return " " + a/b;
+    }
     public String showresult(){
-        return "a + b = " + (a+b) + "\na - b = " + (a-b) + "\na * b = " + (a*b) + "\na / b = " + (a/b);
+        return "a + b = " + (a+b) + "\na - b = " + (a-b) + "\na * b = " + (a*b) + "\na / b =" + division(a, b);
     }
     public static void main(String[] args){
         cal2num newset= new cal2num();
